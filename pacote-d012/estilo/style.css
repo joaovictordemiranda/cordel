@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&display=swap');
+
+@font-face {
+    font-family: 'caramel';
+    src: url(../imagens/Caramel\ and\ Vanilla.ttf) format('truetype');
+}
+
+:root{
+    --font01:'Bebas Neue', cursive;
+    --font02: verdana, sans-serif;
+    --font-texto: 'Caramel', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body, html {
+    min-height: 150px;
+    background-color: white;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font01);
+    font-size: 10vh;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+footer > a{
+     text-decoration: none;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 25px;
+    font-family: var(--font-texto);
+    font-size: 2em;
+    font-weight: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: rgba(219, 219, 219, 0.322);
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(24, 23, 23, 0.603);
+    color: white;
+    box-shadow: inset 6px 6px 0px hwb(0 16% 84% / 0.308);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 3px;
+    background-color:  rgba(58, 58, 58, 0.322);
+    text-shadow: 2px 2px 1px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
